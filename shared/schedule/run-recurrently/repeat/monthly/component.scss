@@ -1,0 +1,16 @@
+@import '../../../../scss/variables';
+
+.root {
+  margin-top: 10px;
+  margin-left: 17px;
+  margin-bottom: 10px;
+}
+
+.hourly {
+  text-align: center;
+  width: 35px;
+}
+
+.field + .field {
+  margin-top: 10px;
+}

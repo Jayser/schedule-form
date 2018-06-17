@@ -1,0 +1,33 @@
+@import '../../../scss/variables';
+
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+  cursor: pointer;
+  background-color: $c-white;
+  border: 1px solid $c-black-mid;
+
+  &:not(.disabled):hover {
+    color: $c-black-dark;
+    border-color: $c-sky-light;
+    background-color: $c-sky-light;
+  }
+
+  &.selected {
+    background-color: $c-black-mid;
+    border-color: $c-black-mid;
+    color: $c-black-dark;
+  }
+
+  &.selected:not(.disabled) {
+    background-color: $c-sky-dark;
+    border-color: $c-sky-dark;
+    color: $c-white;
+
+    + .selected {
+      border-left: 1px solid $c-white;
+    }
+  }
+}

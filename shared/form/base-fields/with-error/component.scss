@@ -1,0 +1,19 @@
+@import '../../../scss/variables';
+
+.with-error {
+  input {
+    border: 1px solid $c-maroon-dark;
+  }
+
+  label {
+    color: $c-maroon-dark;
+  }
+}
+
+.error {
+  font-family: $ff-open-sans;
+  font-size: $fs-small;
+  color: $c-maroon-dark;
+  margin-top: 5px;
+  display: inline-block;
+}

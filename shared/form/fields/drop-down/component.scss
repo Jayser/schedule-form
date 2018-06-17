@@ -1,0 +1,38 @@
+@import '../../../scss/variables';
+
+.root {
+  width: 280px;
+
+  .dropDown {
+    font-family: $ff-open-sans;
+    font-size: $fs-small;
+
+    &__clear-indicator,
+    &__dropdown-indicator {
+      padding: 4px 2px;
+    }
+
+    &__control {
+      background: $c-white;
+      min-height: 30px;
+      height: 30px;
+      line-height: 30px;
+      color: $c-black-dark;
+      border-color: $c-black-mid;
+      box-shadow: 1px 1px 1px #eee inset;
+      cursor: pointer;
+
+      &-is-focused,
+      &:hover {
+        border-color: #ccc;
+      }
+
+      &-is-focused {
+        outline: none;
+        box-shadow: 0 0 2px 1px $c-sky-light;
+      }
+    }
+  }
+}
+
+

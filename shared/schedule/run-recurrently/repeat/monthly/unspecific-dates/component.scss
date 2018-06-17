@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  align-items: center;
+
+  .unspecificDatesDropdown {
+    width: 130px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}

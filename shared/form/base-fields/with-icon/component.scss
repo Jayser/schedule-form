@@ -1,0 +1,16 @@
+@import '../../../scss/variables';
+
+.root {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  pointer-events: none;
+
+  svg {
+    fill: $c-black;
+  }
+}

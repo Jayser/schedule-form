@@ -1,0 +1,19 @@
+@import '../../../scss/variables';
+
+.root {
+  font-family: $ff-open-sans;
+  font-size: $fs-small;
+  color: $c-black-dark;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+
+  & > * {
+    &:first-child {
+      margin-left: 0;
+    }
+    margin-left: 20px;
+  }
+}
